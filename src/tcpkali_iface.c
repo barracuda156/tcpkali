@@ -46,6 +46,10 @@
 #include "tcpkali_logging.h"
 #include "tcpkali_iface.h"
 
+#ifndef AI_NUMERICSERV
+#define AI_NUMERICSERV 0
+#endif
+
 /*
  * Note: struct sockaddr_in6 is larger than struct sockaddr, hence
  * the storage should be bigger. However, we shall not dereference
